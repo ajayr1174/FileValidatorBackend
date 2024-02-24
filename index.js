@@ -25,7 +25,7 @@ app.get("/", (req, res) => {
 });
 
 app.use(cors);
-app.use("/", require("./routes/"));
+app.use("/", require("./routes"));
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
